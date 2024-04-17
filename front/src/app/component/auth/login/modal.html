@@ -1,0 +1,24 @@
+<h1 mat-dialog-title>Cadastro de Usuario</h1>
+<div class="dia log" mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input type="text" [(ngModel)]="data.nome" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Endereço</mat-label>
+    <input type="text" [(ngModel)]="data.endereco" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input type="text" [(ngModel)]="data.email" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Senha</mat-label>
+    <input type="text" [(ngModel)]="data.senha" matInput>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>CLOSE</button>
+  <button mat-button mat-dialog-close [mat-dialog-close]="data">CADASTRAR</button>
+</div> 
+

@@ -1,0 +1,56 @@
+<!-- <div class="centered-div"> -->
+    <!-- <mat-grid-list cols="3" [gutterSize]="'40px'" > -->
+    <mat-grid-list cols="4" rowHeight="250px">
+    <div *ngFor="let restaurante of restaurantes; let i = index">
+        <mat-grid-tile style="overflow: visible;">
+            <mat-card style="background-color: white;" class="card">
+                <mat-card-header>
+                    <mat-card-title>
+                        <span class="titulo_main"> SEVERINA - {{restaurante.bairro}}:</span>
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <span class="titulo">LOCALIZAÇÃO: </span>
+                        <span class="descricao">{{restaurante.localizacao}}</span> 
+                    </mat-card-subtitle>
+                    <mat-card-subtitle>
+                        <span class="titulo">FUNCIONAMENTO: </span>
+                        <span class="descricao">{{restaurante.atendimentoPresencial}}</span> 
+                    </mat-card-subtitle>
+                    <mat-card-subtitle>
+                        <span class="titulo">Inf: </span>
+                        <span class="descricao">{{restaurante.email}} | {{restaurante.telefone}}</span> 
+                    </mat-card-subtitle>
+                    <mat-card-subtitle>
+                        <span class="descricao">Espaço com capacidade para {{restaurante.capacidade}} pessoas</span> 
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-actions>
+                    <button *ngIf="user?.admin == false && userPossuiReserva(restaurante.id) == false" (click)="reservar(restaurante.id)" class="reservar">RESERVAR</button>
+                    <button *ngIf="user?.admin == false && userPossuiReserva(restaurante.id) == true" (click)="cancelarReservar(restaurante.id)" class="cancelar-reservar">CANCELAR RESERVAR</button>
+                    <button *ngIf="user?.admin == true" (click)="remover(restaurante.id)" class="delete-button">EXCLUIR</button>
+                </mat-card-actions>
+            </mat-card>
+            <!-- <button *ngIf="i + 1 == restaurantes.length" (click)="reservar(restaurante.id)" class="add_button"> -->
+                <!-- <span style="font-size: 19px;">+ Adicionar Restaurante </span> -->
+            <div *ngIf="i + 1 == restaurantes.length && user?.admin == true" class="add_button">
+                <a style="color: white; text-decoration: none; font-size: 21px; font-weight:400;"routerLink="/cadastrar-restaurante">+ Adicionar Restaurante</a>
+            </div>
+            <!-- </button> -->
+        </mat-grid-tile>
+    </div>
+<!-- </mat-grid-list> -->
+</mat-grid-list>
+<!-- </div> -->
+
+<!-- <div class="centered-div">
+    <div class="card" *ngFor="let restaurante of restaurantes">
+      <mat-card-title>SEVERINA - {{restaurante.bairro}}</mat-card-title>
+      <span>Localização: {{restaurante.localizacao}}</span>
+      <span>Funcionamento: {{restaurante.atendimentoPresencial}}</span>
+      <span>Espaço com capacidade para {{restaurante.capacidade}} pessoas</span>
+      <span>Inf: {{restaurante.email}} | {{restaurante.telefone}}</span>
+      <p>This card indeterminates progress bar.</p>
+      <button *ngIf="user" (click)="reservar(restaurante.id)" mat-button>RESERVAR</button>
+      <button mat-button>SHARE</button>
+    </div>
+</div> -->

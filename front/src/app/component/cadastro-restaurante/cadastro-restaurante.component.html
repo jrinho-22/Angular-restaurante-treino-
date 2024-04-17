@@ -1,0 +1,33 @@
+
+<div class="centered-div">
+    <h1 style="font-size:23px; color: white;" mat-dialog-title>Cadastro de Restaurante</h1>
+  <mat-form-field>
+    <mat-label>Bairro</mat-label>
+    <input type="text" [(ngModel)]="formData.bairro" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Localizacao</mat-label>
+    <input type="text" [(ngModel)]="formData.localizacao" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>atendimentoPresencial</mat-label>
+    <input type="text" [(ngModel)]="formData.atendimentoPresencial" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>capacidade</mat-label>
+    <input type="text" [(ngModel)]="formData.capacidade" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Email</mat-label>
+    <input type="text" [(ngModel)]="formData.email" matInput>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>telefone</mat-label>
+    <input type="text" [(ngModel)]="formData.telefone" matInput>
+  </mat-form-field>
+  <button class="editar-button" (click)="cadastrarRestaurante()" mat-button>CADASTRAR</button>
+</div>
+<!-- <div mat-dialog-actions>
+  <button mat-button mat-dialog-close>CLOSE</button>
+  <button mat-button mat-dialog-close [mat-dialog-close]="data">LOGGAR</button>
+</div>  -->

@@ -1,0 +1,89 @@
+.main {
+    height: 80px;
+    background-color: rgba(0, 0, 0, .97);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    div {
+        margin-right: 100px;
+    }
+
+        .logo {
+            background-color: transparent;
+            height: 55px;
+            width: 75px;
+            //margin-right: 200px;
+            //filter: grayscale(100%);
+        }
+
+        a {
+            font-size: 14px;
+            transition: .4s;
+            font-family: Verdana;
+            text-decoration: none;
+            color: #eeeeee;
+            cursor: pointer;
+        }
+        a:hover {
+            font-size: 14px;
+            font-family: Verdana;
+            text-decoration: none;
+            color: #728246;
+            cursor: pointer;
+        }
+    }
+
+.dialog {
+    display: flex;
+}
+mat-form-field {
+    margin-right: 20px;
+}
+
+.background_img {
+    height: 594px;
+    width: 100%;
+    filter: brightness(40%);
+    display: inline-block;
+    position: absolute;
+  }
+
+  /* Material-UI Input and Label Styles */
+.mui-input {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .mui-label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    color: #666;
+    font-size: 16px;
+    transform-origin: 0 0;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, font-size 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  
+  .mui-textfield {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  }
+  
+  .mui-textfield:focus,
+  .mui-textfield:not(:placeholder-shown) {
+    border-color: #3498db;
+  }
+  
+  .mui-textfield:focus + .mui-label,
+  .mui-textfield:not(:placeholder-shown) + .mui-label {
+    font-size: 12px;
+    transform: translateY(-25px);
+    color: #3498db;
+  }
+
+

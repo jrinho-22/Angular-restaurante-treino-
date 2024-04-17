@@ -1,0 +1,98 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nome": "jr",
+      "endereco": "Rua Os Dezoito do Forte, 454",
+      "email": "email1",
+      "senha": 1,
+      "admin": true
+    }
+  ],
+  "restaurantes": [
+    {
+      "id": 1,
+      "bairro": "Centro",
+      "localizacao": "Rua Os Dezoito do Forte, 454",
+      "atendimentoPresencial": "Das 11h30 às 22h",
+      "capacidade": 220,
+      "email": "severina@hotmail.com",
+      "telefone": "41-91612205"
+    },
+    {
+      "id": 2,
+      "bairro": "Portão",
+      "localizacao": "Comendador Araujo, 154",
+      "atendimentoPresencial": "Das 11h30 às 22h",
+      "capacidade": 120,
+      "email": "severina@hotmail.com",
+      "telefone": "41-91612205"
+    },
+    {
+      "id": 3,
+      "bairro": "Batel",
+      "localizacao": "Rua Pedro zagonel, 44",
+      "atendimentoPresencial": "Das 11h30 às 22h",
+      "capacidade": 270,
+      "email": "severina@hotmail.com",
+      "telefone": "41-91612205"
+    }
+  ],
+  "reservas": [
+    {
+      "idRestaurante": 1,
+      "idUsuario": 1,
+      "id": 1
+    },
+    {
+      "idRestaurante": 1,
+      "idUsuario": 1,
+      "id": 2
+    },
+    {
+      "idRestaurante": 1,
+      "idUsuario": 5,
+      "id": 3
+    },
+    {
+      "idRestaurante": 1,
+      "idUsuario": 1,
+      "id": 4
+    },
+    {
+      "idRestaurante": 2,
+      "idUsuario": 1,
+      "id": 5
+    },
+    {
+      "idRestaurante": 3,
+      "idUsuario": 1,
+      "id": 6
+    },
+    {
+      "idRestaurante": 2,
+      "idUsuario": 1,
+      "id": 7
+    },
+    {
+      "idRestaurante": 1,
+      "idUsuario": 1,
+      "id": 8
+    },
+    {
+      "idRestaurante": 3,
+      "idUsuario": 1,
+      "id": 9
+    },
+    {
+      "idRestaurante": 1,
+      "idUsuario": 2,
+      "id": 10
+    },
+    {
+      "idRestaurante": 3,
+      "idUsuario": 2,
+      "id": 11
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <!--- Note that these columns can be defined in any order.
+          The actual rendered columns are set as a property on the row definition" -->
+  
+    <!-- Position Column -->
+  
+    <ng-container matColumnDef="nome">
+      <th mat-header-cell *matHeaderCellDef> Name </th>
+      <div>
+        <td mat-cell *matCellDef="let element"> {{element.nome}} </td>
+      </div>
+      
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="endereco">
+      <th mat-header-cell *matHeaderCellDef> endereco </th>
+      <td mat-cell *matCellDef="let element"> {{element.endereco}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef> email </th>
+      <td mat-cell *matCellDef="let element"> {{element.email}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="senha">
+        <th mat-header-cell *matHeaderCellDef> senha </th>
+        <td mat-cell *matCellDef="let element"> {{element.senha}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="admin">
+        <th mat-header-cell *matHeaderCellDef> admin </th>
+        <td mat-cell *matCellDef="let element"> {{element.admin}} </td>
+      </ng-container>
+
+
+      <ng-container matColumnDef="acoes">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let element">
+          <button class="delete-button" (click)="removeUser(element)">
+                        <!-- (change)="$event ? selection.toggle(row) : null"
+                        [checked]="selection.isSelected(row)"
+                        [aria-label]="checkboxLabel(row)"> -->
+                        EXCLUIR
+          </button>
+            <a class="editar-button" style="margin-left: 20px; color: white; text-decoration: none;"[routerLink]="['/editar-usuario', element.id]" [queryParams]="{teste: 'teste'}">EDITAR</a>
+        </td>
+      </ng-container>
+      
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  

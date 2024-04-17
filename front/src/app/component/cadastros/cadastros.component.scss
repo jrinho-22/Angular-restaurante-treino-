@@ -1,0 +1,61 @@
+// .centered-span{ 
+//   position: absolute;
+//   top: 50%; /* Vertically center the span */
+//   left: 50%; /* Horizontally center the span */
+//   transform: translate(-50%, -50%); /* Move the span back by 50% of its own width and height to center it */
+//   background-color: rgba(0, 0, 0, 1.9); /* Optional background color with transparency */
+//   color: white; /* Optional text color */
+//   padding: 30px; /* Optional padding */
+//   font-size: 70px;
+//   font-weight: 900;
+// }
+
+table {
+  width: 100%;
+    position: absolute;
+    top: 53%; /* Vertically center the span */
+    left: 50%; /* Horizontally center the span */
+    transform: translate(-50%, -50%); /* Move the span back by 50% of its own width and height to center it */
+    background-color: rgba(0, 0, 0, 0.9); /* Optional background color with transparency */
+    color: white; /* Optional text color */
+    padding: 15px; /* Optional padding */
+    font-size: 70px;
+    font-weight: 900;
+}
+
+button {
+  background-color: rgb(184, 0, 0);
+  color: wheat;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.delete-button {
+  background-color: #ff0000; /* Background color (red) */
+  color: #fff; /* Text color (white) */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Padding for better spacing */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 13px; /* Font size */
+}
+
+/* Hover effect */
+.delete-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+.editar-button {
+  background-color: #929292; /* Background color (red) */
+  color: #fff; /* Text color (white) */
+  border: none; /* Remove border */
+  padding: 5px 10px; /* Padding for better spacing */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 13px; /* Font size */
+}
+
+/* Hover effect */
+// .editar-button:hover {
+//   background-color: #cc0000; /* Darker red on hover */
+// }

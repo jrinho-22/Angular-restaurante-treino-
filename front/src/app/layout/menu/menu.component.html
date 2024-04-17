@@ -1,0 +1,17 @@
+<div class="main">
+      <div><img class="logo" src="/assets/moments.png" /></div>
+      <div><a routerLink="home">HOME</a></div>
+      <div *ngIf="!user" (click)="openDialogCadastro()"><a routerLink="home">CADASTRAR</a></div>
+      <!-- <div *ngIf="user && user.admin == true"><a routerLink="cadastrar-restaurante">CADASTRAR RESTAURANTE</a></div> -->
+      <!-- <div><a routerLink="cadastrar-restaurante">CADASTRAR RESTAURANTE</a></div> -->
+      <div><a routerLink="restaurantes">RESTAURANTES</a></div>
+      <div *ngIf="user && user.admin == true"><a routerLink="/cadastros">CADASTROS</a></div>
+      <!-- <div><a routerLink="/cadastros">CADASTROS</a></div> -->
+      <div *ngIf="!user" (click)="openDialogLogin()"><a routerLink="home">LOGIN</a></div>
+      <!-- <div><a routerLink="home">CONTATO</a></div> -->
+      <div *ngIf="user"(click)="logOut()"><a routerLink="home">LOGOUT</a></div>
+</div>
+
+<div>
+      <img class="background_img" src="/assets/back.jpg" />
+</div>

@@ -1,0 +1,30 @@
+.centered-span{ 
+  position: absolute;
+  top: 50%; /* Vertically center the span */
+  left: 50%; /* Horizontally center the span */
+  transform: translate(-50%, -50%); /* Move the span back by 50% of its own width and height to center it */
+  background-color: rgba(0, 0, 0, 0.9); /* Optional background color with transparency */
+  color: white; /* Optional text color */
+  padding: 15px; /* Optional padding */
+  font-size: 70px;
+  font-weight: 900;
+
+  &_sub {
+    position: absolute;
+    top: 59%; /* Vertically center the span */
+    left: 50%; /* Horizontally center the span */
+    transform: translate(-50%, -50%); /* Move the span back by 50% of its own width and height to center it */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional background color with transparency */
+    color: white; /* Optional text color */
+    padding: 2px; /* Optional padding */
+    font-size: 29px;
+    font-weight: 100
+  }
+}
+
+img {
+  height: 594px;
+  width: 100%;
+  filter: brightness(40%);
+  display: inline-block;
+}
